@@ -16,14 +16,29 @@ Software Installed:
   
   All packages have been updated
   
-    To update again:
+   To update again (in the terminal):
+      * sudo apt-get update
+      * sudo apt-get upgrade
+ 
+  The following services must be installed:
+      Apache2
+ 
+  The following python packages must be installed:
+      Flask
+      flask-paginate
+      Postgres
+      SQL Alchemy
       
-
-  Flask
-  flask-paginate
-  Postgres
-  SQL Alchemy
-  Apache2
+  The following configurations were made:
+     Permissions:
+        /home/grader/.ssh: 700
+        /home/grader/.ssh/authorized_keys: 644
+        PasswordAuthentication: No
+        
+      Ports:
+         SSH: 2200 (only)
+         
+    
   
   
 Resources used to set up the server:
