@@ -1,6 +1,8 @@
-# dansbookspublic
+# Dansbookspublic
 
 ## The following information is needed to access the Amazon Lightsail server hosting the Udacity item catelog project.
+
+This is a database of book titles as well as 'holdings' for each title. The user can add/edit/delete books they own. Anyone can add a holding to any book. 
 
 ### Complete URL: http://ec2-54-213-136-173.us-west-2.compute.amazonaws.com/main/
 (will be getting a proper domain name once I figgure out a good one)
@@ -37,10 +39,14 @@
       *passlib
       
   ##### The following configurations were made:
+     The user account 'grader' was added and provided sudo access.
+     The psql database that the web application uses is called 'catalog'.
+  
      Permissions:
         */home/grader/.ssh: 700
         */home/grader/.ssh/authorized_keys: 644
         *PasswordAuthentication: No
+        *Permitrootlogin: No
         
       Firewall (must be enabled):
         *SSH: 2200 (only)
